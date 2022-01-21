@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {View, Image, TouchableOpacity} from 'react-native';
-import {icons, COLORS} from '../constants';
+import {icons, COLORS, SIZES} from '../constants';
 
 import {
   createBottomTabNavigator,
@@ -28,12 +28,12 @@ const TabBarCustomButton = ({accessibilityState, children, onPress}) => {
               fill={COLORS.white}
             />
           </Svg>
-          <View style={{flex: 1, backgroundColor: COLORS.white}}></View>
+          <View style={{flex: 1, backgroundColor: COLORS.white }}></View>
         </View>
 
         <TouchableOpacity
           style={{
-            top: -22.5,
+            top: -22,
             justifyContent: 'center',
             alignItems: 'center',
             width: 50,
